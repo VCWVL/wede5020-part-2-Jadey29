@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPCA Take-Action</title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <!-- Insert terms and conditions: CSS -->
+    <ul> 
+         <li> <a href="index.html">Home</a></li>
+         <li> <a href="about.html">About Us</a></li>
+         <li> <a href="takeAction.html">Take Action</a></li>
+         <li> <a href="adoption.html">Adpot</a></li>
+         <li> <a href="equiry.html">Enquiry</a></li>
+         <li> <a href="contact us.html">Contact Us</a></li>
+         <li> <a href="news.html">Events & News</a></li>
+         <li> <a href="services.html">Services</a></li>
+       </ul>
+       <br>
+
+    <img src="_images/images.png" alt="ALert" width="150" height="150">  <h1> REPORT CRUELTY!</h1>
+
+    <p>
+      At the SPCA Animal Lifeline, we rely on the generosity of animal lovers and
+      compassionate citizens to continue our mission. There are many ways you can
+      make a real difference in the lives of vulnerable animals.
+    </p>
+
+    <p>To report incidents of animal cruelty, please contact our office at 031 579 6501. For after-hours emergencies, kindly call 083 212 6103.</p>
+   <p> Alternatively, you may complete the form below, and our Inspectors will respond as soon as possible. Please do not send reports via email or Facebook, as these channels are not consistently monitored.</p>
+   <br>
+<!-- The form below allows users to report animal cruelty incidents to the SPCA. 
+    The action attribute is currently set to "#" as a placeholder, meaning the form will not submit data to a server. 
+    Replace "#" with the appropriate server endpoint to process form submissions. -->
+
+  <form action="#" method="post" class="report-form">
+    <div class="form-group">
+      <label for="name">Your Name (Required):</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Your Email (optional):</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Your Phone Number (Required):</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+    </div>
+
+    <div class="form-group">
+      <label for="location">Location of Incident:</label>
+      <input type="text" id="location" name="location" placeholder="Where did this happen?" required>
+    </div>
+
+    <div class="form-group">
+      <label for="details">Details of Cruelty:</label>
+      <textarea id="details" name="details" rows="6" placeholder="Describe what you witnessed" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="animals">Type of Animal(s) Involved:</label>
+      <input type="text" id="animals" name="animals" placeholder="e.g., dog, cat, horse">
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Submit Report</button>
+    </div>
+  </form>
+
+  <p>
+    If the situation is urgent or life-threatening, please call our emergency 
+    number immediately at <strong>031 579 6500</strong>. For more information, 
+    visit our official site: 
+    <a href="https://www.spcadbn.org.za/" target="_blank">www.spcadbn.org.za</a>
+  </p>
+
+<!-- Add css to create the final version of the donate form, this is the draft. -->
+  <h1> Every Paw Matters: Donation's</h1>
+     <img src="_images/empty-bowl.jpg" alt="Donate" width="200" height="200">
+  <p>Your Kindness saves lives. Every donation helps us rescue, shelter, protect, and care for animals in need.</p>
+
+<h2> Where Your Donations Goes</h2>
+ <ul>
+      <li>R100 - Vaccinations for one puppy </li>
+      <li>R250 - Food for a cat for a month </li>
+      <li>R500 - Rescue & medical care for a neglected animal </li>
+      <li>Custom Amount - Every rand makes a difference </li>
+    </ul>
+    <!-- Donation Form -->
+     <h2> Make a Donation</h2>
+     <form action="#" method="post">
+      
+      <!-- Donation Amount -->
+      <p>Select an Amount:</p>
+      <label><input type="radio" name="amount" value="100"> R100</label><br>
+      <label><input type="radio" name="amount" value="250"> R250</label><br>
+      <label><input type="radio" name="amount" value="500"> R500</label><br>
+      <label><input type="radio" name="amount" value="other"> Other Amount: <input type="text" name="other_amount" placeholder="Enter amount"></label>
+      <br>
+
+    
+      <!-- Donor Details -->
+      <label>Your Name: <input type="text" name="name" placeholder="Enter your name"></label><br>
+      <label>Email Address: <input type="email" name="email" placeholder="Enter your email"></label><br>
+
+      <!-- Dedication -->
+      <label><input type="checkbox" name="dedicate"> Dedicate this donation in honor of someone</label><br>
+      <!-- Submit -->
+      <button type="submit">Donate Now</button>
+    </form>
+  <br>
+
+  <img src="_images/Placerspca.org-Volunteer-2.jpg" alt="Volunteer" width="1500" height="400">
+  <br>
+    <h2>Volunteer Application Form</h2>
+    <p>We need volunteers for a variety of tasks, including helping out at events, sorting jumble and fundraising.</p>
+
+    <form action="#" method="post">
+
+      
+      <label>First Name (*): <input type="text" name="first_name" required></label><br>
+      <label>Last Name (*): <input type="text" name="last_name" required></label><br>
+      <label>Email Address (*): <input type="email" name="email" required></label><br>
+      <label>Tel. Number (*): <input type="tel" name="phone" required></label><br>
+      <label>ID Number (*): <input type="text" name="id" required></label><br>
+      <label>Address (*): <input type="text" name="address" required></label><br>
+      <label>Street/Suburb (*): <input type="text" name="street" required></label><br>
+      <label>City (*): <input type="text" name="city" required></label><br><br>
+      <label>Postal Code (*): <input type="text" name="postal_code" required></label><br>
+
+      
+      <p>I prefer to be contacted by:</p>
+      <label><input type="radio" name="contact_pref" value="phone"> Phone</label><br>
+      <label><input type="radio" name="contact_pref" value="email"> Email</label><br>
+
+      
+      <p>Please indicate which of the following activities you would be willing to assist with:</p>
+      <label><input type="checkbox" name="activities" value="charity_shop"> Springfield SPCA Charity Shop (Mon-Sat)</label>
+      <label><input type="checkbox" name="activities" value="book_sales"> Book Sales (The Crescent, Bluff, Adhoc)</label>
+      <label><input type="checkbox" name="activities" value="driving"> Driving the SPCA van</label>
+      <label><input type="checkbox" name="activities" value="sorting"> Assisting in the sorting room</label><br>
+      <label><input type="checkbox" name="activities" value="house_garden"> House & Garden Show</label><br>
+      <label><input type="checkbox" name="activities" value="events"> Other Events</label><br>
+
+      
+      <p>Please indicate your availability:</p>
+      <label><input type="radio" name="availability" value="weekends"> Weekends and public holidays only</label><br>
+      <label><input type="radio" name="availability" value="weekdays"> Weekdays</label><br>
+
+      
+      <label>Why would you like to volunteer? (*):<br>
+        <textarea name="reason" rows="4" cols="50" required></textarea>
+      </label><br><br>
+
+      
+      <label>Do you volunteer for any other organisations? If yes, which ones? (*):<br>
+        <textarea name="other_orgs" rows="3" cols="50" required></textarea>
+      </label><br>
+
+      <p><strong>I hereby acknowledge that:</strong></p>
+      <ul>
+    <li>I am 18 years of age or older. (If you are between 16-18 years of age and wish to volunteer, please email <a href="mailto:info@spcadbn.org.za">info@spcadbn.org.za</a>. No volunteers under 16 are permitted.)</li>
+    <li>I am a voluntary worker of the Durban SPCA.</li>
+    <li>I am expected to comply with the same disciplinary code as full-time employees of the Durban SPCA.</li>
+    <li>I have read and agree to adhere to the SPCA's Code of Conduct and Terms & Conditions.</li>
+    <li>I may be requested to accompany an SPCA staff member in an official vehicle or drive an SPCA vehicle while on duty.</li>
+    <li>I am responsible for my own medical expenses in the event of any injury sustained while fulfilling voluntary duties at the SPCA.</li>
+    <li>I indemnify the Durban SPCA, its directors, office bearers, staff, and benefactors against all claims of any nature, by any person, arising from any incident, accident, injury, or other cause while volunteering at the SPCA.</li>
+    <li>If required to handle money, I am prepared to obtain a SAPS clearance certificate at the SPCA's cost.</li>
+  </ul>
+
+<label>
+        <input type="checkbox" name="terms" required> I have read the <a href="#">Terms & Conditions</a> (*)
+      </label><br><br>
+
+      
+      <button type="submit">Proceed</button>
+      <button type="reset">Close</button>
+    </form>
+    <br>
+    <img src="_images/Fundrasing.png" alt="Fundraising Events" width="1500" height="400">
+<br>
+    <h2>Fundraising Events</h2>
+  <p>Join us in supporting our animals by attending or contributing to our upcoming fundraising events. Your participation helps us provide shelter, food, and medical care for animals in need.</p>
+
+  <article>
+    <h3>Charity Golf Day</h3>
+    <p><strong>Date:</strong> 15 September 2025</p>
+    <p><strong>Location:</strong> Durban Country Club</p>
+    <p><strong>Goal:</strong> Raise R100,000 for animal medical care</p>
+    <p>We invite golf lovers and supporters to join us for a fun-filled day on the green, with proceeds going directly to the SPCA's medical treatment fund. Hope to see you there!</p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>Spring Fair & Market</h3>
+    <p><strong>Date:</strong> 3 October 2025</p>
+    <p><strong>Location:</strong> SPCA Grounds, Springfield</p>
+    <p><strong>Goal:</strong> Raise R50,000 for food and shelter supplies</p>
+    <p>Bring your family and friends for a day of food stalls, crafts, music, and fun. All funds raised will help feed and care for rescued animals at the SPCA.</p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>Charity Concert: Music for Paws</h3>
+    <p><strong>Date:</strong> 21 November 2025</p>
+    <p><strong>Location:</strong> The Playhouse Theatre, Durban</p>
+    <p><strong>Goal:</strong> Raise R75,000 for animal rescue operations</p>
+    <p>Enjoy an evening of live music while supporting a great cause. All proceeds go towards rescuing and rehoming animals in distress. Don't miss it!</p>
+  </article>
+  
+  <footer>
+        <p>&copy; 2025 SPCA Durban & Coast. All rights reserved.</p>
+    </footer>
+</body>
+</html>
