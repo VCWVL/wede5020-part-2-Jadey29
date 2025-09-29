@@ -1,11 +1,21 @@
+<<<<<<< HEAD
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3_0JBOTn)
 POE Part 2 WEDE5020 
 ReadMe File
-Git Hub Link:  https://github.com/VCWVL/wede5020-part-2-Jadey29.git
+Git Hub Link:  
 Name: Jadene Naidoo
 Student Number: ST 10471357
 Course: WEDE5020
 Due Date: 29/09/2025
+=======
+Project Title: POE Part 2 WEDE5020 
+ReadMe File
+Git Hub Link:  
+Name: Jadene Naidoo
+Student Number: ST 10471357
+Course: WEDE5020
+Due Date for PArt 2 : 29/09/2025
+>>>>>>> afa7149f6d8cf2b77d2e1ee8c7487615050d2578
 
 Project OverView:
 The Animal Lifeline Website is designed to promote animal welfare, provide resources and information for pet owners, and encourage community involvement in caring for animals. The site offers users information about adoption, volunteering, donations, services, and upcoming events, while fostering awareness of responsible pet ownership.
@@ -43,6 +53,7 @@ Key Features and Functionality:
 
 part 2 Details:
 
+<<<<<<< HEAD
 This submission includes Part 1 of the website and Prt2 which is all css, covering:
 1. Home Page (index.html)          index.css
 2. About Us (about.html)      About-us.css
@@ -54,11 +65,29 @@ This submission includes Part 1 of the website and Prt2 which is all css, coveri
 8. Services (services.html)      services.css
   
  Part 3 (additional features, backend integration, and enhanced interactivity) will follow in future submissions.
+=======
+This submission includes Part 1 of the website, covering:
+1. Home Page (index.html)
+2. About Us (about.html)
+3. Take Action (takeAction.html)
+4. Adoption (adoption.html)
+5. Enquiry (equiry.html)
+6. Contact Us (contact us.html)
+7. Events & News (news.html)
+8. Services (services.html)
+9. ReadMe
+10. Folder Structures
+11. Sitemap
+12. Project Documents 
+
+Part 2 and Part 3 (additional features, backend integration, and enhanced interactivity) will follow in future submissions.
+>>>>>>> afa7149f6d8cf2b77d2e1ee8c7487615050d2578
 
 Sitemap: 
 
  <img width="734" height="760" alt="image" src="https://github.com/user-attachments/assets/be87a647-db05-4e8c-a0ab-6493c69211b6" />
 
+<<<<<<< HEAD
 Different screen sizes with the webiste- just the index page has example:
 
 Desktop:
@@ -66,6 +95,9 @@ Desktop:
 Mobile:
 
 Tablet:
+=======
+ChangeLog: In this submission i have add more detailed comments in the html code as well has detailed commit comments when submitting to GitHub. I have also cleaned up my Folder Structure and included the java and css folders. i have added my sitemap of this project. I will in future submissions as well had  other html elements and call to action, also cleaning up unnecessary files and inculding changelogs.
+>>>>>>> afa7149f6d8cf2b77d2e1ee8c7487615050d2578
 
 Reference's:
 Part 1 and Part 2 
