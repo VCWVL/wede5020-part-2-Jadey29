@@ -1,0 +1,327 @@
+/* Additional styles for news & events page */
+
+/* =========================
+   News & Events Hero Section
+   ========================= */
+
+   /*
+References for CSS Styling
+
+W3Schools. n.d. CSS Pseudo-classes. [online] Available at:
+   https://www.w3schools.com/css/css_pseudo_classes.asp
+   (Accessed 19/09/2025).
+
+ MDN Web Docs. n.d. CSS Grid Layout. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+   (Accessed 22/09/2025).
+
+CSS-Tricks. n.d. A Complete Guide to Flexbox. [online] Available at:
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   (Accessed 22/09/2025).
+
+ MDN Web Docs. n.d. Using media queries. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+   (Accessed 19/09/2025).
+
+ W3Schools. n.d. CSS Box Model. [online] Available at:
+   https://www.w3schools.com/css/css_boxmodel.asp
+   (Accessed 21/09/2025).
+
+ MDN Web Docs. n.d. Font properties. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/font
+   (Accessed 20/09/2025).
+
+ W3Schools. n.d. CSS Backgrounds and Borders. [online] Available at:
+   https://www.w3schools.com/css/css_background.asp
+   (Accessed 19/09/2025).
+
+ MDN Web Docs. n.d. CSS Transitions. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+   (Accessed 22/09/2025).
+
+ MDN Web Docs. n.d. Responsive design. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+   (Accessed 22/09/2025).
+
+ W3Schools. n.d. CSS Box Shadow. [online] Available at:
+    https://www.w3schools.com/css/css3_shadows.asp
+    (Accessed 20/09/2025).
+*/
+
+/* Css Reference:
+     W3Schools. n.d. Pseudo-class. [online] Available at:
+     https://www.w3schools.com/css/css_pseudo_classes.asp
+     (Accessed 19/09/2025).*/ 
+
+.news-hero {
+    position: relative; /* allows absolute positioning of text content */
+    height: 400px;
+    overflow: hidden; /* ensures image stays inside */
+    display: flex; /* center content */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.news-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keeps aspect ratio while covering space */
+    filter: brightness(0.7); /* darkens image for better text readability */
+}
+
+.news-hero-content {
+    position: absolute; /* overlays text on hero image */
+    z-index: 10;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.news-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* improves text visibility */
+}
+
+.news-hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* News & Events Content */
+.news-content {
+    padding: 60px 0;
+}
+
+.news-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; /* centers intro block */
+}
+
+.news-intro p {
+    font-size: 1.1rem;
+    color: #6c757d; /* muted text color */
+    margin-bottom: 20px;
+}
+
+/* Section Headers */
+.section-header {
+    color: #2c6b94; /* blue shade */
+    margin: 40px 0 20px;
+    border-bottom: 2px solid #fc8dcd; /* pink underline */
+    padding-bottom: 10px;
+}
+
+/*  Article Styles*/
+.news-article {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s; /* hover effect */
+}
+
+.news-article:hover {
+    transform: translateY(-5px); /* subtle lift */
+}
+
+.news-article h3, .news-article h4 {
+    color: #2c6b94;
+    margin-bottom: 15px;
+}
+
+.news-article h4 a {
+    color: #2c6b94;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.news-article h4 a:hover {
+    color: #fc8dcd; /* hover turns pink */
+}
+
+.news-article p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.news-article a {
+    color: #fc8dcd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.news-article a:hover {
+    text-decoration: underline;
+}
+
+.news-article img {
+    max-width: 80%;
+    height: 400px;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: block; /* centers image */
+}
+
+
+.social-highlights {
+    background-color: #f8f9fa; /* light gray background */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 40px 0;
+}
+
+.social-highlights h2 {
+    color: #2c6b94;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.social-platform {
+    margin-bottom: 30px;
+}
+
+.social-platform h3 {
+    color: #2c6b94;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-platform h3 i {
+    margin-right: 10px;
+    color: #fc8dcd; /* pink icons */
+}
+
+.social-highlights ul {
+    list-style-type: none; /* removes bullets */
+}
+
+.social-highlights li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9ecef; /* separator line */
+}
+
+.social-highlights li:last-child {
+    border-bottom: none; /* removes line from last item */
+}
+
+.social-highlights strong {
+    color: #2c6b94;
+}
+
+.social-highlights a {
+    color: #fc8dcd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.social-highlights a:hover {
+    text-decoration: underline;
+}
+
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* single column by default */
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.story-article {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.story-article h3 {
+    color: #2c6b94;
+    margin-bottom: 20px;
+}
+
+.story-article img {
+    max-width: 60%;
+    height: 40%;
+    border-radius: 8px;
+    margin: 20px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: block; /* centers image */
+}
+
+.event-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive grid */
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.event-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* lift effect */
+}
+
+.event-card h4 {
+    color: #2c6b94;
+    margin-bottom: 15px;
+}
+
+.event-card a {
+    color: #fc8dcd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.event-card a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .news-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .news-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .news-article, .story-article {
+        padding: 20px;
+    }
+    
+    .social-highlights {
+        padding: 20px;
+    }
+    
+    .event-highlights {
+        grid-template-columns: 1fr; /* stack on small screens */
+    }
+    
+    .news-article img,
+    .story-article img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .news-article img,
+    .story-article img {
+        max-width: 100%; /* full width for mobile */
+    }
+}

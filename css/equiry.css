@@ -1,0 +1,249 @@
+/* Additional styles for Enquiry page */
+
+   /*
+References for CSS Styling
+
+ W3Schools. n.d. CSS Pseudo-classes. [online] Available at:
+   https://www.w3schools.com/css/css_pseudo_classes.asp
+   (Accessed 19/09/2025).
+
+ MDN Web Docs. n.d. CSS Grid Layout. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+   (Accessed 20/09/2025).
+
+ CSS-Tricks. n.d. A Complete Guide to Flexbox. [online] Available at:
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   (Accessed 23/09/2025).
+
+ MDN Web Docs. n.d. Using media queries. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+   (Accessed 24/09/2025).
+
+W3Schools. n.d. CSS Box Model. [online] Available at:
+   https://www.w3schools.com/css/css_boxmodel.asp
+   (Accessed 25/09/2025).
+
+MDN Web Docs. n.d. Font properties. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/font
+   (Accessed 20/09/2025).
+
+ W3Schools. n.d. CSS Backgrounds and Borders. [online] Available at:
+   https://www.w3schools.com/css/css_background.asp
+   (Accessed 19/09/2025).
+
+   MDN Web Docs. n.d. CSS Transitions. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+   (Accessed 20/09/2025).
+
+   MDN Web Docs. n.d. Responsive design. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+   (Accessed 20/09/2025).
+
+ W3Schools. n.d. CSS Box Shadow. [online] Available at:
+    https://www.w3schools.com/css/css3_shadows.asp
+    (Accessed 20/09/2025).
+*/
+
+
+
+.enquiry-hero {
+    background: linear-gradient(rgba(44, 107, 148, 0.8), rgba(44, 107, 148, 0.9)), url('_images/4b1ab10a-f1fb-4b59-b803-6330f6660ec9.png') center/cover no-repeat; /* Background image with gradient overlay */
+    color: white;
+    padding: 100px 0; /* Vertical padding */
+    text-align: center; /* Center text */
+}
+
+/* Hero Heading */
+.enquiry-hero h1 {
+    font-size: 3rem; /* Large heading size */
+    margin-bottom: 20px;
+}
+
+/* Hero Paragraph */
+.enquiry-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Enquiry Content Section */
+.enquiry-content {
+    padding: 80px 0; /* Padding top and bottom */
+}
+
+/* Enquiry Form Container */
+.enquiry-form-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center form */
+    padding: 40px;
+    background-color: white; /* White form background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+/* Intro Text for Enquiry Page */
+.enquiry-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.enquiry-intro p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Form Note Text */
+.form-note {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Contact Info Sidebar */
+.contact-info-sidebar {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+/* Sidebar Heading */
+.contact-info-sidebar h3 {
+    color: #2c6b94;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fc8dcd;
+    padding-bottom: 10px;
+}
+
+/* Individual Contact Item */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Contact Icon Styling */
+.contact-icon {
+    flex: 0 0 40px;
+    height: 40px;
+    background-color: #2c6b94;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 15px;
+}
+
+/* Contact Details Heading */
+.contact-details h4 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Contact Details Text */
+.contact-details p {
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Responsive Design for Enquiry Page */
+@media (max-width: 768px) {
+    .enquiry-hero {
+        padding: 60px 0; /* Reduce padding on small screens */
+    }
+    
+    .enquiry-hero h1 {
+        font-size: 2.2rem; /* Smaller heading on mobile */
+    }
+    
+    .enquiry-form-container {
+        padding: 20px; /* Reduce form padding on mobile */
+    }
+    
+    .contact-item {
+        flex-direction: column; /* Stack contact items vertically */
+        text-align: center;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+}
+
+
+.enquiry-hero {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.enquiry-hero img {
+    width: 120%;
+    height: 200%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.enquiry-hero-content {
+    position: absolute;
+    z-index: 10;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.enquiry-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.enquiry-hero-content p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Reaffirming Enquiry Content and Form */
+.enquiry-content {
+    padding: 80px 0;
+}
+
+.enquiry-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.enquiry-hero {
+    background: linear-gradient(rgba(44, 107, 148, 0.8), rgba(44, 107, 148, 0.9)), url('_images/enquiry-bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.enquiry-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.enquiry-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}

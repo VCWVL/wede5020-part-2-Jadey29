@@ -2,85 +2,417 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=  b , initial-scale=1.0">
-    <title>Animal Lifeline-Durban & Coast</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Lifeline - Durban & Coast</title>
+    <!-- Links to the css file for this webpage.-->
+     <!-- Edit Java- script for POE -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    
 </head>
 <body>
-   <h1> Animal Lifeline</h1> 
-    <img src="_images/logo.png" alt="Animal Lifeline Logo" width="200" height="200">
-    <br>
-     <p>Hope. Healing. A second Chance. That's what SPCA Animal Lifeline is about!</p>
-   <!--This is the navigation bar to other pages. -->
-       <ul> 
-         <li> <a href="index.html">Home</a></li>
-         <li> <a href="about.html">About Us</a></li>
-         <li> <a href="takeAction.html">Take Action</a></li>
-         <li> <a href="adoption.html">Adpot</a></li>
-         <li> <a href="equiry.html">Enquiry</a></li>
-         <li> <a href="contact us.html">Contact Us</a></li>
-         <li> <a href="news.html">Events & News</a></li>
-         <li> <a href="services.html">Services</a></li>
-       </ul>
+    <!-- Top Header. Which includes the Animal Lifeline email and their cellphone number, and links to their facebook and instagram page. -->
+    <div class="top-header">
+        <div class="container top-header-content">
+            <div class="contact-info">
+                <a href="mailto:info@animallifeline.org">
+                    <i class="fas fa-envelope"></i> info@AnimalLife.org.za
+                </a>
+                <a href="tel:0211234567">
+                    <i class="fas fa-phone-alt"></i>  (031) 579-6500
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+        
+            </div>
+            
+        </div>
+    </div>
 
-    <!-- Introduces what the website is about. -->
-     <h2> Welcome to Animal Lifeline!!</h2>
-     <p> Since 1897, The Animal Lifeline-Durban & Coast associated SPCA, which is a non profit oraganization has been a voice for the voiceless animal in need.
-         We are dedicated to rescuing, protecting, and caring for all types of animals in need. 
-         We are one of South Africa's oldest and most trusted animal welfare organizations, and our mission is to prevent cruelty, promote adoption,
-         and provide shelter and veterinary care for thousands of animals every year.
-    </p>
-    <img src="_images/help-us-help-them.jpg" alt="Dog and Cat" width="300" height="300"> <img src="_images/love-for-pets.jpg" alt="Dog" width="300" height="300">
+    <!-- Main Header- Animal LifeLine Logo-->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="_images/logo.png" alt="Animal Lifeline Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Animal Lifeline</h1>
+                    <p>Hope. Healing. A second Chance.</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <!-- Links to the other webpages -->
+                <ul> 
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="takeAction.html">Take Action</a></li>
+                    <li><a href="adoption.html">Adopt</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="news.html">Events & News</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <h3>What We Do?</h3>
-    <!-- Bulletd listings -->
-  <ul>
-    <li> <strong>Animal Rescue:</strong> Responding to cases of neglect, abuse, or abandonment.
-    With compassion at the heart of everything we do, our mission is to provide a safe haven for abandoned, abused, and neglected animals while working tirelessly to find them loving, forever homes.</li>   <img src="_images/dog-that-survived-hurricane-dorian.jpg" alt="Animal Rescue" width="300" height="250">
-    <li> <strong>Adoptions:</strong> Finding safe and loving forever homes for animals.
-    Through our adoption program, we connect rescued cats, dogs, and other pets with caring families ready to open their hearts and homes. Every adoption not only transforms the life of a pet in need but also brings unconditional love, joy, and companionship to their new family. Choose adoption—save a life and gain a loyal friend for life.</li>            <img src="_images/adopt.jpg" alt="Adopt Don't Shop" width="300" height="250">
-    <li> <strong>Veterinary Care:</strong> Animal Lifeline Veterinary Care provides compassionate, professional medical services to ensure the health and well-being of animals in need. 
-      From routine check-ups and vaccinations to emergency treatments and surgeries, our dedicated team of veterinarians and caregivers work tirelessly to give every pet the chance at a healthier, happier life.</li>            <img src="_images/care.jpg" alt="Veterinary Care" width="300" height="250">
-    <li> <strong>Shelter:</strong> Animal Lifeline Shelters provide a safe haven for abandoned, abused, and neglected animals, offering them love, care, and medical attention.
-       These shelters work tirelessly to rescue and rehabilitate pets in need, ensuring they are given a second chance at life.</li>                    <img src="_images/shelters.avif" alt="Animal Shelter" width="300" height="250"> 
-    <li> <strong>Education:</strong>  Animal Lifeline Education aims to create awareness and understanding about animal welfare, responsible pet ownership, and compassion for all living beings. 
-      Through workshops, school visits, and community outreach programs, the initiative teaches people—especially children—the importance of kindness, proper animal care, and the role we all play in protecting animals.
-       By educating communities, SPCA Animal Lifeline builds a foundation of empathy and responsibility that ensures a safer, healthier future for animals and people alike.</li>            <img src="_images/pets-care.jpg" alt="Education" width="300" height="250">   
-    <li> <strong>Community Outreach:</strong> Animal Lifeline's community outreach program is dedicated to promoting compassion, responsible pet ownership, and animal welfare within local communities.
-       Through educational workshops, adoption drives, vaccination campaigns, and support services, we connect with families and individuals to ensure pets receive the care they deserve.</li>
-  </ul>
- 
+    <!-- Hero Carousel for 3 sliding images. created with html and css. -->
+    <section class="hero-carousel">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="_images/image.png" alt="Animal Rescue" class="slide-image">
+                    <div class="slide-content">
+                        <h1>Animal Lifeline</h1>
+                        <p>Rescue. Rehabilitate. Rehome.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Animal Shelter" class="slide-image">
+                    <div class="slide-content">
+                        <h1>Animal Lifeline</h1>
+                        <p>Providing shelter and care since 1897</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80" alt="Animal Adoption" class="slide-image">
+                    <div class="slide-content">
+                        <h1>Animal Lifeline</h1>
+                        <p>Find your forever friend today</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
 
-   <h4>How You Can Help?</h4>
-  <p>Every person can make a difference. Here's how you can support us:</p>
-  <ul>
-    <li> Adopt a pet and give them a forever home.</li>
-    <li> Volunteer your time to help in our shelter and outreach programs.</li>
-    <li> Donate funds or supplies to support our daily operations.</li>
-    <li> Attend our events to raise awareness and show your support.</li>
-  </ul>
-     <h4>Stay Connected!</h4>
-     <!-- Linked to they fackbook and instagram page -->
-      <p> These social media pages was developed with SPCA and Animal Lifeline.</p>
-  <p>
-    Follow us on <a href="https://www.facebook.com">Facebook</a> and <a href="https://www.instagram.com">Instagram</a> 
-    for real-time updates, inspiring adoption stories, and upcoming events. Join our community and be part of the movement to create a kinder world for animals.
-  </p>
+    <!-- About Section. Introduces the company and gives a short backstory.-->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <h1>Welcome to Animal Lifeline!!</h1>
+                <h2>Hope. Healing. A second Chance. That's what Animal Lifeline is about!</h2>
+            </div>
+            <div class="about-content">
+                <p>Since 1897, The Animal Lifeline-Durban & Coast associated SPCA, which is a non profit organization has been a voice for the voiceless animal in need. We are dedicated to rescuing, protecting, and caring for all types of animals in need.</p>
+                <p>We are one of South Africa's oldest and most trusted animal welfare organizations, and our mission is to prevent cruelty, promote adoption, and provide shelter and veterinary care for thousands of animals every year.</p>
+                <p>At the heart of everything we do is a deep commitment to animal welfare. We provide a safe haven for unwanted, stray, and abandoned animals, ensuring they find loving homes through our successful adoption program.</p>
+                <p>Our mission goes beyond sheltering—we actively prosecute cases of animal cruelty and educate schools and communities about the benefits and importance of animal welfare.</p>
+            </div>
+        </div>
+   
+    <!-- Two Images Side by Side -->
+    <section class="dual-images-section">
+        <div class="container">
+            <div class="dual-images-container">
+                <div class="dual-image">
+                    <img src="_images/help-us-help-them.jpg" alt="Animal Rescue Mission">
+                </div>
+                <div class="dual-image">
+                    <img src="_images/love-for-pets.jpg" alt="Animal Care Services">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h4>Why It Matters?</h4>
-  <p>
-    By supporting the Animal Lifeline, you play a vital role in safeguarding animal welfare, preventing cruelty, and promoting a compassionate community.
-     Your contribution ensures that every animal has the opportunity to live with care, dignity, and respect
-  </p>
+   <!-- Services Section explains what Animal Life Line does for the public. -->
+<section class="services-section">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="section-title">
+            <h1>What We Do?</h1>
+            <h2>Our comprehensive services for animals in need</h2>
+        </div>
+<!-- section layout -->
+        <div class="services-grid">
+            <!-- Service item- Animal Rescue -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="_images/dog-that-survived-hurricane-dorian.jpg" alt="Animal Rescue Service">
+                </div>
+                <div class="service-content">
+                    <h3>Animal Rescue</h3>
+                    <p>Responding to cases of neglect, abuse, or abandonment. With compassion at the heart of everything we do, our mission is to provide a safe haven for abandoned, abused, and neglected animals.</p>
+                </div>
+            </div>
+            <!-- Service item- Adoptions -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="_images/adopt.jpg" alt="Adoption Service">
+                </div>
+                <div class="service-content">
+                    <h3>Adoptions</h3>
+                    <p>Finding safe and loving forever homes for animals. Through our adoption program, we connect rescued cats, dogs, and other pets with caring families ready to open their hearts and homes.</p>
+                </div>
+            </div>
+            <!-- Service item- Veterinary Care -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="_images/care.jpg" alt="Veterinary Care Service">
+                </div>
+                <div class="service-content">
+                    <h3>Veterinary Care</h3>
+                    <p>Animal Lifeline Veterinary Care provides compassionate, professional medical services to ensure the health and well-being of animals in need.</p>
+                </div>
+            </div>
+            <!-- Service item- Shelter -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="_images/shelters.avif" alt="Shelter Service">
+                </div>
+                <div class="service-content">
+                    <h3>Shelter</h3>
+                    <p>Animal Lifeline Shelters provide a safe haven for abandoned, abused, and neglected animals, offering them love, care, and medical attention.</p>
+                </div>
+            </div>
+            <!-- Service item- Education -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="_images/pets-care.jpg" alt="Education Service">
+                </div>
+                <div class="service-content">
+                    <h3>Education</h3>
+                    <p>Animal Lifeline Education aims to create awareness and understanding about animal welfare, responsible pet ownership, and compassion for all living beings.</p>
+                </div>
+            </div>
+            <!-- Service item- Community Outreach -->
+            <div class="service-item">
+                <div class="service-image">
+                    <img src="_images/communtyoutreach.png" alt="Community Outreach Service">
+                </div>
+                <div class="service-content">
+                    <h3>Community Outreach</h3>
+                    <p>Animal Lifeline's community outreach program is dedicated to promoting compassion, responsible pet ownership, and animal welfare within local communities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <p>
-    <strong>Join us in creating a kinder, safer world for animals — together, we save lives.</strong>
-  </p>
-    <img src="_images/What-can-u-do.webp" alt="Together We Save Lives" width="300" height="300">
-    <hr>
-    <footer>
-        <p>&copy; 2025 Animal Lifeline-Durban & Coast. All rights reserved.</p>
-    </footer>
-</body>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <!-- contains all the stat items in agrid layout form. -->
+            <div class="stats-grid">
+                <!-- Stat item for adoptions -->
+                <div class="stat-item">
+                    <!-- I con reprsenting Adoptions (House= new home) -->
+                    <div class="stat-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <!-- Animated counter target number (set via JS later) -->
+                    <div class="stat-number">250+</div>
+                    <div class="stat-title">Adoptions a year</div>
+                </div>
+                <!-- Stat Item: Sterilisations -->
+                <div class="stat-item">
+                    <!-- Icon representing medical sterilisation -->
+                    <div class="stat-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <!-- Number of sterilisation surgeries performed -->
+                    <div class="stat-number">300+</div>
+                    <div class="stat-title">Sterilisations a year</div>
+                </div>
+                <!-- Stat Item: Vaccinations -->
+                <div class="stat-item">
+                    <!-- Icon symbolising vaccines -->
+                    <div class="stat-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <!-- Number of animals vaccinated annually -->
+                    <div class="stat-number">550+</div>
+                    <div class="stat-title">Vaccinations a year</div>
+                </div>
+                <!-- Stat Item: Surgical Procedures -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <div class="stat-number">380+</div>
+                    <div class="stat-title">Surgical Procedures a year</div>
+                </div>
+                <!-- Stat Item: Cruelty Cases Investigated -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <div class="stat-number">120+</div>
+                    <div class="stat-title">Animal cruelty cases investigated</div>
+                </div>
+                <!-- Stat Item: Microchips Implanted -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="stat-number">350+</div>
+                    <div class="stat-title">Microchips implanted a year</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section class="help-section">
+        <div class="container">
+            <div class="section-title">
+                <h1>How You Can Help?</h1>
+                <h2>Every person can make a difference. Here's how you can support us</h2>
+            </div>
+            <div class="help-options">
+                <div class="help-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Adopt</h3>
+                    <p>Adopt a pet and give them a forever home.</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Volunteer</h3>
+                    <p>Volunteer your time to help in our shelter and outreach programs.</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-donate"></i>
+                    <h3>Donate</h3>
+                    <p>Donate funds or supplies to support our daily operations.</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Attend Events</h3>
+                    <p>Attend our events to raise awareness and show your support.</p>
+                </div>
+            </div>
+        </div>
     
+    <!-- Stay Connected Section -->
+<section class="stay-connected-section">
+    <div class="container">
+        <div class="stay-connected-content">
+            <h2>Stay Connected!</h2>
+            <p>These social media pages were developed with SPCA and Animal Lifeline.</p>
+            <p>Follow us on Facebook and Instagram for real-time updates, inspiring adoption stories, and upcoming events. Join our community and be part of the movement to create a kinder world for animals.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" class="social-link">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Why It Matters Section -->
+    <section class="why-matters-section">
+        <div class="container">
+            <div class="why-matters-content">
+                <div class="why-matters-text">
+                    <h2>Why It Matters?</h2>
+                    <p>By supporting the Animal Lifeline, you play a vital role in safeguarding animal welfare, preventing cruelty, and promoting a compassionate community. Your contribution ensures that every animal has the opportunity to live with care, dignity, and respect.</p>
+                    <p>Join us in creating a kinder, safer world for animals — together, we save lives.</p>
+                </div>
+                <div class="why-matters-image">
+                    <img src="_images/What-can-u-do.webp" alt="Why Animal Lifeline Matters">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Animal Lifeline</h4>
+                    <p>We are a non-profit organization dedicated to rescuing, rehabilitating, and rehoming animals in need.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Adoption Process</a></li>
+                        <li><a href="#">Volunteer Opportunities</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                        <li><a href="#">Report Animal Cruelty</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Animal Lane, Durban</li>
+                        <li><i class="fas fa-phone-alt"></i> 021 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@animallifeline.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Animal Lifeline-Durban & Coast. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        
+        // Animate stats counters
+        function animateCounter(element, target, duration) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start) + '+';
+                }
+            }, 16);
+        }
+        
+        // Animate stats when they come into view
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statItems = entry.target.querySelectorAll('.stat-number');
+                    statItems.forEach(item => {
+                        const target = parseInt(item.textContent);
+                        animateCounter(item, target, 2000);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(document.querySelector('.stats-section'));
+    </script>
+</body>
 </html>

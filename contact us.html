@@ -3,71 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Animal Lifeline Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
+    
 </head>
 <body>
-    <img src="_images/contact.gif" alt="Contact Us" width="1000" height="400">
-    <!-- Html tags for the numbers and location -->
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="container top-header-content">
+           
+        </div>
+    </div>
 
-    <ul> 
-         <li> <a href="index.html">Home</a></li>
-         <li> <a href="about.html">About Us</a></li>
-         <li> <a href="takeAction.html">Take Action</a></li>
-         <li> <a href="adoption.html">Adpot</a></li>
-         <li> <a href="equiry.html">Enquiry</a></li>
-         <li> <a href="contact us.html">Contact Us</a></li>
-         <li> <a href="news.html">Events & News</a></li>
-         <li> <a href="services.html">Services</a></li>
-       </ul>
-    <br>
-    <!-- Used from HTML tag sheets -->
-    <h2>Contact Information:</h2>
-     <h3>Main Office</h3>
-      <p><strong> Address:</strong> Springfield Park, 2 Willowfield Cres, Sea Cow Lake, Durban, 4001</p>
-      <p><strong> Phone:</strong> (031) 579-6500</p>
-      <p><strong> Email:</strong> info@AnimalLife.org.za; info@spca.org.za</p>
-      <p><strong> </strong> Hours:</strong> Mon-Fri: 8:00am-4:30pm ; Sat: 8:00am-12:00pm ; Sun & Public Holidays: Closed</p>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="_images/logo.png" alt="Animal Lifeline Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Animal Lifeline</h1>
+                    <p>Hope. Healing. A second Chance.</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="takeAction.html">Take Action</a></li>
+                    <li><a href="adoption.html">Adopt</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="news.html">Events & News</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<br> 
-      <h3>Emergency Contacts</h3>
-      <p><strong>After Hours Emergencies:</strong> (083) 212-6103</p>
-      <p><strong>Inspectorate:</strong> (031) 579-6534</p>
-      <p><strong>Clinic Enquiries:</strong> (031) 579-6524</p>
-<br>
-<!-- The section below provides additional contact details for the SPCA and Animal lifeline, including main office address, phone, email, office hours, and emergency contacts. 
-    The contact form allows users to send inquiries directly from the website. 
-    The embedded Google Map helps visitors locate the Animal Lifeline easily. 
-    Navigation links at the top allow users to access other pages of the site. 
-    The footer contains copyright information. -->
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <img src="_images/contact.gif" alt="Contact Us" class="hero-background-image">
+        <div class="contact-hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with Animal Lifeline - we're here to help animals and the people who care for them</p>
+        </div>
+    </section>
 
-      <h3>Contact Form:  </h3>
-      <form>
-        <label for="name">Your Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <!-- Contact Content Section -->
+    <section class="contact-content section-light">
+        <div class="container">
+            <div class="contact-intro">
+                <p>Get in touch with Animal Lifeline - we're here to help animals and the people who care for them</p>
 
-        <label for="email">Your Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+                <p>Have questions or need assistance? Our team is ready to help with adoption inquiries, volunteer opportunities, donations, or any other questions you may have about our services.</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="contact-form-container">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Optional">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    
+                    <p class="form-note">Note: Our office hours are Monday to Friday, 8am-4:30pm and Saturday, 8am-12pm. We aim to respond to all enquiries within 24 hours.</p>
+                </div>
+                
+                <div class="contact-info-sidebar">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Our Shelter</h4>
+                            <p>Springfield Park, 2 Willowfield Cres, Sea Cow Lake, Durban, 4001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>Main: (031) 579-6500</p>
+                            <p>Emergency: (083) 212-6103</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@animallifeline.org</p>
+                            <p>We respond within 24 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Friday: 8am - 4:30pm</p>
+                            <p>Saturday: 8am - 12pm</p>
+                            <p>Sunday & Public Holidays: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Emergency Contacts</h4>
+                            <p>After Hours: (083) 212-6103</p>
+                            <p>Inspectorate: (031) 579-6534</p>
+                            <p>Clinic: (031) 579-6524</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h3 style="color: #2c6b94; margin-bottom: 20px; border-bottom: 2px solid #f58220; padding-bottom: 10px; text-align: center;">Find Us</h3>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.458046678374!2d31.0186!3d-29.7968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a85dfd8a3b6d%3A0xd86c02efdd3c3b!2sDurban%20%26%20Coast%20SPCA!5e0!3m2!1sen!2sza!4v1693744500000"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject"><br><br>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>About Animal Lifeline</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Mission</a></li>
+                        <li><a href="about.html">Our History</a></li>
+                        <li><a href="about.html">Our Team</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Get Involved</h4>
+                    <ul class="footer-links">
+                        <li><a href="adoption.html">Adopt a Pet</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="foster.html">Foster Care</a></li>
+                        <li><a href="takeAction.html">Take Action</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Animal Rescue</a></li>
+                        <li><a href="services.html">Veterinary Care</a></li>
+                        <li><a href="services.html">Education Programs</a></li>
+                        <li><a href="services.html">Lost & Found</a></li>
+                        <li><a href="services.html">Community Outreach</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Animal Lifeline. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
-
-        <button type="submit">Send Message</button>
-      </form>
-    
-      <h3>Find Us</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.458046678374!2d31.0186!3d-29.7968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a85dfd8a3b6d%3A0xd86c02efdd3c3b!2sDurban%20%26%20Coast%20SPCA!5e0!3m2!1sen!2sza!4v1693744500000"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-    
-<hr>
-  <footer>
-    <p>&copy; 2025 Animal Lifeline-Durban & Coast SPCA | All rights reserved.</p>
-  </footer>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper for hero carousel if needed
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+        });
+    </script>
 </body>
 </html>

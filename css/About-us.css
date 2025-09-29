@@ -1,0 +1,136 @@
+/* Additional styles for the About page */
+
+/* Hero Image - Updated height */
+
+/* Css Refernece:
+     W3Schools. n.d. Pseudo-class. [online] Available at:
+     https://www.w3schools.com/css/css_pseudo_classes.asp
+     (Accessed 19/09/2025).*/ 
+
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+    height: 400px; /* Added fixed height */
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%; /* Changed from auto to 100% */
+    object-fit: cover; /* Ensures image covers the container properly */
+    display: block;
+}
+
+/* Team Member Styles - Fixed image sizing */
+.team-member {
+    text-align: center;
+}
+
+.team-img {
+    width: 100%;
+    height: 380px; /* Increased height to prevent cutting */
+    object-fit: cover; /* This will ensure the entire image area is used */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    color: #2c6b94;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Content with Image Layout */
+.content-with-image {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-with-image .history-content,
+.content-with-image .facilities-content {
+    flex: 1;
+}
+
+.content-with-image .history-image,
+.content-with-image .facilities-image {
+    flex: 1;
+}
+
+.history-img,
+.facilities-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Report Links */
+.report-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.report-links .btn {
+    text-align: center;
+}
+
+.annual-report-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-with-image {
+        flex-direction: column;
+    }
+    
+    .report-links .btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    
+    /* Responsive hero image height */
+    .hero-image {
+        height: 300px; /* Smaller height on mobile */
+    }
+    
+    /* Responsive team images */
+    .team-img {
+        height: 200px; /* Slightly smaller on mobile */
+    }
+}
+
+/* Additional mobile optimization for very small screens */
+@media (max-width: 480px) {
+    .hero-image {
+        height: 250px;
+    }
+    
+    .team-img {
+        height: 180px;
+    }
+}
+.btn {
+    display: inline-block;
+    background-color: #fc8dcd;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,919 @@
+/* 
+ * ANIMAL LIFELINE STYLESHEET
+ * Responsive CSS with modern features
+ * Features: CSS Grid, Flexbox, Relative Units, Responsive Images, Interactive States
+ */
+ /*
+References for CSS Styling
+
+ W3Schools. n.d. CSS Pseudo-classes. [online] Available at:
+   https://www.w3schools.com/css/css_pseudo_classes.asp
+   (Accessed 19/09/2025).
+
+MDN Web Docs. n.d. CSS Grid Layout. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+   (Accessed 24/09/2025).
+
+   CSS-Tricks. n.d. A Complete Guide to Flexbox. [online] Available at:
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   (Accessed 22/09/2025).
+
+ MDN Web Docs. n.d. Using media queries. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+   (Accessed 19/09/2025).
+
+ W3Schools. n.d. CSS Box Model. [online] Available at:
+   https://www.w3schools.com/css/css_boxmodel.asp
+   (Accessed 19/09/2025).
+
+ MDN Web Docs. n.d. Font properties. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/font
+   (Accessed 23/09/2025).
+
+ W3Schools. n.d. CSS Backgrounds and Borders. [online] Available at:
+   https://www.w3schools.com/css/css_background.asp
+   (Accessed 22/09/2025).
+
+ MDN Web Docs. n.d. CSS Transitions. [online] Available at:
+ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+   (Accessed 20/09/2025).
+
+MDN Web Docs. n.d. Responsive design. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+   (Accessed 21/09/2025).
+
+ W3Schools. n.d. CSS Box Shadow. [online] Available at:
+    https://www.w3schools.com/css/css3_shadows.asp
+    (Accessed 20/09/2025).
+*/
+ 
+
+* {
+    margin: 0;                    
+    padding: 0;                   
+    box-sizing: border-box;       
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Base body styles */
+body {
+    color: #333;                  
+    line-height: 1.6;             
+    background-color: #fff;       
+    font-size: 100%;              
+}
+
+/* Container for consistent content width */
+.container {
+    width: 100%;                  /* Full width on mobile */
+    max-width: 1200px;            /* Maximum width on large screens */
+    margin: 0 auto;               /* Center container horizontally */
+    padding: 0 15px;              
+}
+
+
+.top-header {
+    background-color: #2c6b94;
+    color: white;                 /* White text for contrast */
+    padding: 0.5em 0;             
+    font-size: 0.875em;           /* Smaller text size (14px) */
+}
+
+/* Flex container for header content */
+.top-header-content {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;          /* Vertically center items */
+}
+
+/* Contact information links */
+.contact-info {
+    display: flex;                /* Horizontal layout for contact items */
+    gap: 1.25em;                  /* Space between contact items (20px) */
+}
+
+/* Contact link styles */
+.contact-info a {
+    color: white;                 
+    text-decoration: none;        
+    display: flex;                
+    align-items: center;          /* Vertically center icon and text */
+    gap: 0.3125em;                /* Space between icon and text (5px) */
+    transition: color 0.3s;       /* Smooth color transition on hover */
+}
+
+/* Contact link hover effect */
+.contact-info a:hover {
+    color: #f8f9fa;               /* Light gray on hover */
+}
+
+/* Social media icons container */
+.social-icons {
+    display: flex;                /* Horizontal layout */
+    gap: 0.9375em;                /* Space between icons (15px) */
+}
+
+/* Social icon links */
+.social-icons a {
+    color: white;                 
+    font-size: 1em;               /* Base icon size (16px) */
+    transition: color 0.3s;       
+}
+
+/* Social icon hover effect */
+.social-icons a:hover {
+    color: #f8f9fa;               
+}
+
+
+.donate-btn {
+    background-color: #fc8dcd;    
+    color: white;                 
+    padding: 0.5em 0.9375em;      
+    border-radius: 0.25em;
+    text-decoration: none;        /* Remove underline */
+    font-weight: 600;             
+    transition: background-color 0.3s; 
+}
+
+/* Donate button hover state */
+.donate-btn:hover {
+    background-color: #e67db9;    
+}
+
+
+.main-header {
+    padding: 0.9375em 0;          
+    background-color: white;      
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+/* Header content layout */
+.header-content {
+    display: flex;                
+    justify-content: space-between; 
+    align-items: center;          
+}
+
+.logo-container {
+    display: flex;                
+    align-items: center;          
+    gap: 0.9375em;                
+}
+
+
+.logo {
+    width: 8.75em;
+    height: 8.75em;
+    border-radius: 50%;           
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+    overflow: hidden;             
+    border: 0.25em solid #fc8dcd;
+    background-color: #f8f9fa;    
+}
+
+/* Logo image styles */
+.logo img {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover;            
+}
+
+/* Logo text styles */
+.logo-text h1 {
+    font-size: 2.5rem;            
+    color: #2c6b94;               
+    margin-bottom: 0.3125em;      
+}
+
+
+.logo-text p {
+    font-style: italic;           
+    color: #6c757d;               
+}
+
+
+/* Navigation menu */
+.main-nav ul {
+    display: flex;
+    list-style: none;             /* Remove bullet points */
+    gap: 1.5625em;                /* Space between menu items (25px) */
+}
+
+/* Navigation links */
+.main-nav a {
+    color: #333;                  
+    text-decoration: none;        
+    font-weight: 600;             
+    font-size: 1em;               
+    transition: color 0.3s;       
+    position: relative;           
+}
+
+/* Navigation link hover effect */
+.main-nav a:hover {
+    color: #fc8dcd;
+}
+
+/* Active navigation link */
+.main-nav a.active {
+    color: #fc8dcd;               
+}
+
+/* Active link indicator line */
+.main-nav a.active::after {
+    content: '';                  
+    position: absolute;           
+    bottom: -0.3125em;            
+    left: 0;                      
+    width: 100%;                  
+    height: 0.125em;              
+    background-color: #fc8dcd;    
+}
+
+.hero-carousel {
+    position: relative;           
+    height: 37.5em;               
+    overflow: hidden;             
+}
+
+/* Swiper container */
+.swiper {
+    width: 100%;                  
+    height: 100%;                 
+}
+
+/* Individual slide */
+.swiper-slide {
+    display: flex;                
+    align-items: center;          
+    justify-content: center;
+    position: relative;           
+}
+
+/* Slide text content overlay */
+.slide-content {
+    position: absolute;           
+    z-index: 10;
+    text-align: center;           
+    color: white;                 
+    max-width: 50em;              
+    padding: 0 1.25em;            
+}
+
+
+.slide-content h1 {
+    font-size: clamp(1.5rem, 5vw, 3.5rem); 
+    margin-bottom: 1.25em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.slide-content p {
+    font-size: clamp(1rem, 3vw, 1.5rem); 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+/* Slide background image */
+.slide-image {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover;            
+    filter: brightness(0.7);      
+}
+
+/* Swiper navigation buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: white;                 
+    background-color: rgba(0, 0, 0, 0.3); 
+    width: 3.125em;               
+    height: 3.125em;              
+    border-radius: 50%;           
+}
+
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.25em;            
+}
+
+
+.swiper-pagination-bullet {
+    background-color: white;      
+    opacity: 0.5;                 
+    width: 0.75em;                
+    height: 0.75em;               
+}
+
+
+.swiper-pagination-bullet-active {
+    opacity: 1;                   
+    background-color: #fc8dcd;    
+}
+
+
+.about-section {
+    padding: 5em 0;               
+    background-color: #f8f9fa;    
+}
+
+/* Section title styling */
+.section-title {
+    text-align: center;           
+    margin-bottom: 2.5em;         
+}
+
+
+.section-title h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem); 
+    color: #2c6b94;               
+    margin-bottom: 0.9375em;      
+}
+
+/* Section subtitle */
+.section-title h2 {
+    font-size: clamp(1.125rem, 3vw, 1.5rem); 
+    color: #6c757d;               
+    font-weight: 400;             
+    max-width: 50em;              
+    margin: 0 auto;               
+}
+
+/* About content text */
+.about-content {
+    font-size: 1.1em;             
+    line-height: 1.8;             
+    max-width: 62.5em;            
+    margin: 0 auto;               
+}
+
+/* About paragraph spacing */
+.about-content p {
+    margin-bottom: 1.25em;        
+}
+
+.services-section {
+    padding: 5em 0;               
+    background-color: #f8f9fa;    
+}
+
+/* CSS Grid for services layout */
+.services-grid {
+    display: grid;                /* CSS Grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(23.75em, 1fr)); 
+    gap: 2.5em;                   
+    margin-top: 3.125em;          
+}
+
+/* Individual service card */
+.service-item {
+    background: white;            
+    border-radius: 0.75em;        
+    overflow: hidden;             
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;                
+    flex-direction: column;       
+}
+
+/* Service card hover effect */
+.service-item:hover {
+    transform: translateY(-0.625em); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
+}
+
+/* Service image container */
+.service-image {
+    width: 100%;                  
+    height: 18.75em;
+    overflow: hidden;             
+    flex-shrink: 0;               
+}
+
+/* Service image styling */
+.service-image img {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover;            
+    transition: transform 0.3s ease; 
+}
+
+/* Service image hover zoom effect */
+.service-item:hover .service-image img {
+    transform: scale(1.1);        
+}
+
+/* Service text content area */
+.service-content {
+    padding: 1.875em;             
+    flex-grow: 1;                 
+    display: flex;                
+    flex-direction: column;       
+}
+
+/* Service title with fluid typography */
+.service-content h3 {
+    color: #2c6b94;               
+    font-size: clamp(1.125rem, 3vw, 1.5rem); 
+    margin-bottom: 0.9375em;      
+    font-weight: 600;             
+}
+
+/* Service description text */
+.service-content p {
+    color: #666;                  
+    line-height: 1.6;             
+    margin: 0;                    
+    flex-grow: 1;
+}
+
+
+.dual-images-section {
+    padding: 3.75em 0;            
+    background-color: white;      
+}
+
+/* CSS Grid for two-column layout */
+.dual-images-container {
+    display: grid;                
+    grid-template-columns: 1fr 1fr; 
+    gap: 1.875em;                 
+}
+
+/* Individual image container */
+.dual-image {
+    width: 100%;                  
+    height: 31.25em;              
+    overflow: hidden;             
+    border-radius: 0.75em;        
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Dual image styling */
+.dual-image img {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover;            
+    transition: transform 0.3s ease; 
+}
+
+/* Dual image hover effect */
+.dual-image:hover img {
+    transform: scale(1.05);       
+}
+
+
+.stats-section {
+    padding: 5em 0;               
+    background-color: #2c6b94;    
+    color: white;                 
+}
+
+/* CSS Grid for stats layout */
+.stats-grid {
+    display: grid;                /* CSS Grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 1.875em;                 /* Space between items (30px) */
+}
+
+/* Individual stat item */
+.stat-item {
+    text-align: center;
+    padding: 1.875em;             
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 0.5em;         
+    transition: transform 0.3s;   
+}
+
+/* Stat item hover effect */
+.stat-item:hover {
+    transform: translateY(-0.3125em); 
+}
+
+/* Stat icon container */
+.stat-icon {
+    width: 5em;                   
+    height: 5em;                  
+    margin: 0 auto 1.25em;        
+    background-color: #fc8dcd;    
+    border-radius: 50%;           
+    display: flex;                
+    align-items: center;          
+    justify-content: center;      
+    color: white;                 
+    font-size: 1.875em;           
+}
+
+/* Stat number display */
+.stat-number {
+    font-size: 2.5rem;            
+    font-weight: 700;             
+    margin-bottom: 0.625em;       
+}
+
+/* Stat title */
+.stat-title {
+    font-size: 1.2rem;            
+}
+/* How to help section */
+.help-section {
+    padding: 5em 0;               
+    background-color: #f8f9fa;    
+}
+
+/* CSS Grid for help options */
+.help-options {
+    display: grid;                
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.25em;                  
+}
+
+/* Help option card */
+.help-card {
+    text-align: center;           
+    padding: 1.875em 1.25em;      
+    background-color: white;      
+    border-radius: 0.5em;         
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s;   
+}
+
+/* Help card hover effect */
+.help-card:hover {
+    transform: translateY(-0.3125em); 
+}
+
+/* Help card icon */
+.help-card i {
+    font-size: 2.5rem;          
+    color: #fc8dcd;               
+    margin-bottom: 0.9375em;      
+}
+
+/* Help card title */
+.help-card h3 {
+    color: #2c6b94;               
+    margin-bottom: 0.625em;       
+}
+
+/* Social media connection section */
+.stay-connected-section {
+    padding: 3.75em 0;            
+    background-color: #f8f9fa;    
+    text-align: center;           
+}
+
+.stay-connected-content h2 {
+    color: #2c6b94;               
+    font-size: clamp(1.5rem, 4vw, 2.2rem); 
+    margin-bottom: 1.25em;        /* Bottom margin (20px) */
+}
+
+/* Section description text */
+.stay-connected-content p {
+    font-size: 1.1rem;        
+    color: #666;                  
+    line-height: 1.6;             
+    max-width: 43.75em;           /* Maximum width (700px) */
+    margin: 0 auto 0.9375em;      /* Center with bottom margin (15px) */
+}
+
+/* Social links container */
+.social-links {
+    display: flex;               
+    justify-content: center;   
+    gap: 1.875em;                 
+    margin-top: 1.875em;          
+}
+
+/* Social media button */
+.social-link {
+    display: flex;                
+    align-items: center;          
+    gap: 0.625em;                 
+    padding: 0.75em 1.5625em;     
+    background-color: #2c6b94;    
+    color: white;                 
+    text-decoration: none;        
+    border-radius: 0.5em;         
+    transition: all 0.3s ease;    
+    font-weight: 600;             
+}
+
+/* Social button hover effect */
+.social-link:hover {
+    background-color: #1a4a6b;    
+    transform: translateY(-0.1875em); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+}
+
+
+.social-link i {
+    font-size: 1.2rem;            
+}
+
+
+/* Mission importance section */
+.why-matters-section {
+    padding: 5em 0;               
+    background-color: #2c6b94;    
+    color: white;                 
+}
+
+/* CSS Grid for text and image layout */
+.why-matters-content {
+    display: grid;                
+    grid-template-columns: 2fr 1fr; 
+    gap: 3.125em;                 
+    align-items: center;          
+}
+
+/* Mission text content */
+.why-matters-text h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); 
+    margin-bottom: 1.5625em;      
+    color: white;                 
+}
+
+/* Mission description */
+.why-matters-text p {
+    font-size: 1.2rem;            
+    line-height: 1.8;             
+    margin-bottom: 1.25em;        
+}
+
+/* Mission image container */
+.why-matters-image {
+    width: 100%;                  
+    height: 25em;                 
+    overflow: hidden;             
+    border-radius: 0.75em;        
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+}
+
+/* Mission image styling */
+.why-matters-image img {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover;            
+}
+
+
+/* Site footer */
+.footer {
+    background-color: #2a2a2a;    
+    color: #adb5bd;               
+    padding: 3.75em 0 1.875em;
+}
+
+/* CSS Grid for footer columns */
+.footer-content {
+    display: grid;                
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2.5em;                   
+    margin-bottom: 2.5em;         
+}
+
+/* Footer column heading */
+.footer-column h4 {
+    color: white;                 
+    margin-bottom: 1.25em;        /* Bottom margin (20px) */
+    font-size: 1.2rem;            
+}
+
+/* Footer links list */
+.footer-links {
+    list-style: none;             
+}
+
+/* Footer list item spacing */
+.footer-links li {
+    margin-bottom: 0.625em;       
+}
+
+/* Footer link styles */
+.footer-links a {
+    color: #adb5bd;               
+    text-decoration: none;        
+    transition: color 0.3s;       
+}
+
+/* Footer link hover effect */
+.footer-links a:hover {
+    color: white;                 
+}
+
+/* Footer bottom section */
+.footer-bottom {
+    text-align: center;           
+    padding-top: 1.875em;         
+    border-top: 1px solid #3480ec;   
+    font-size: 0.9rem;            
+}
+
+
+/* Base responsive image class for srcset implementation */
+.responsive-img {
+    width: 100%;                 
+    height: auto;                 
+    display: block;               
+}
+
+
+.picture-element {
+    width: 100%;                  
+    height: auto;                 
+}
+
+/* Picture element image styling */
+.picture-element img {
+    width: 100%;                 
+    height: auto;                 
+    object-fit: cover;            
+}
+
+
+/* Focus states for keyboard navigation */
+.main-nav a:focus,
+.donate-btn:focus,
+.social-link:focus,
+.help-card:focus {
+    outline: 2px solid #fc8dcd;   
+    outline-offset: 2px;          
+}
+
+/* Active state for buttons */
+.donate-btn:active {
+    transform: scale(0.98);       
+}
+
+
+/* Example of grid template areas for complex layouts */
+.stats-grid-advanced {
+    display: grid;                /* CSS Grid layout */
+    grid-template-areas:          
+        "stat1 stat2"
+        "stat3 stat4"
+        "stat5 stat6";
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);   
+    gap: 1.5em;                   
+}
+
+/* Grid area assignments */
+.stat-1 { grid-area: stat1; }     
+.stat-2 { grid-area: stat2; }     
+.stat-3 { grid-area: stat3; }     
+.stat-4 { grid-area: stat4; }     
+.stat-5 { grid-area: stat5; }
+.stat-6 { grid-area: stat6; }     
+
+
+/* Large desktop breakpoint (1200px) */
+@media (max-width: 75em) {
+    .container {
+        padding: 0 1rem;          /* Reduced padding */
+    }
+}
+
+/* Desktop breakpoint (992px) */
+@media (max-width: 62em) {
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+    
+    .help-options {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+    
+    .dual-images-container {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 1.25em;               /* Reduced gap (20px) */
+    }
+    
+    .dual-image {
+        height: 21.875em;          /* Reduced height (350px) */
+    }
+    
+    .why-matters-content {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 2.5em;                /* Reduced gap (40px) */
+    }
+    
+    .why-matters-image {
+        height: 21.875em;          /* Reduced height (350px) */
+        order: -1;                 /* Image above text on mobile */
+    }
+}
+
+/* Tablet breakpoint (768px) */
+@media (max-width: 48em) {
+    .top-header-content {
+        flex-direction: column;    /* Stack vertically */
+        gap: 0.625em;              /* Reduced gap (10px) */
+        text-align: center;        /* Center align */
+    }
+    
+    .header-content {
+        flex-direction: column;    /* Stack logo and nav */
+        gap: 1.25em;               /* Increased gap (20px) */
+    }
+    
+    .main-nav ul {
+        flex-direction: column;    /* Vertical menu */
+        gap: 0.9375em;             /* Reduced gap (15px) */
+        text-align: center;        /* Center align */
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    
+    .help-options {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr; /* Single column */
+    }
+    
+    .hero-carousel {
+        height: 25em;              /* Reduced height (400px) */
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 1.875em;               /* Reduced gap (30px) */
+    }
+    
+    .service-image {
+        height: 17.5em;            /* Reduced height (280px) */
+    }
+    
+    .service-content {
+        padding: 1.5625em;         /* Reduced padding (25px) */
+    }
+    
+    .dual-images-section {
+        padding: 2.5em 0;          /* Reduced padding (40px) */
+    }
+    
+    .dual-image {
+        height: 18.75em;           /* Reduced height (300px) */
+    }
+    
+    .why-matters-section {
+        padding: 3.75em 0;         /* Reduced padding (60px) */
+    }
+    
+    .why-matters-image {
+        height: 18.75em;           /* Reduced height (300px) */
+    }
+    
+    .stay-connected-section {
+        padding: 2.5em 0;          /* Reduced padding (40px) */
+    }
+    
+    .social-links {
+        flex-direction: column;    /* Stack buttons vertically */
+        gap: 0.9375em;             /* Reduced gap (15px) */
+        align-items: center;       /* Center align */
+    }
+    
+    .social-link {
+        width: 12.5em;             /* Fixed button width (200px) */
+        justify-content: center;   /* Center content */
+    }
+}
+
+/* Mobile breakpoint (480px) */
+@media (max-width: 30em) {
+    .services-section {
+        padding: 3.75em 0;         /* Reduced padding (60px) */
+    }
+    
+    .service-image {
+        height: 15.625em;          /* Reduced height (250px) */
+    }
+    
+    .service-content {
+        padding: 1.25em;           /* Reduced padding (20px) */
+    }
+    
+    .dual-image {
+        height: 15.625em;          /* Reduced height (250px) */
+    }
+    
+    .why-matters-image {
+        height: 15.625em;          /* Reduced height (250px) */
+    }
+}

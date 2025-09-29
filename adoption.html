@@ -3,203 +3,600 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopt Me</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Adopt - Animal Lifeline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/adoption.css">
 </head>
 <body>
-    <h1> Love Knows No Size: Adopt a Little Friend Today!</h1> <img src="_images/Aodpt.jpg" alt="Adopt Me" width="200" height="200">
-    <br>
-    <h3>Why Adopt?</h3>
-    <p>
-      Thousands of animals are abandoned every year. By adopting, you help reduce 
-      overpopulation and give a deserving animal a second chance at life. Our adoption 
-      fees cover sterilization, vaccinations, and a vet check-up, giving you peace of 
-      mind and saving you costs in the long run.
-    </p>
-    <!-- Html tags for the numbers and location -->
-<ul> 
-         <li> <a href="index.html">Home</a></li>
-         <li> <a href="about.html">About Us</a></li>
-         <li> <a href="takeAction.html">Take Action</a></li>
-         <li> <a href="adoption.html">Adpot</a></li>
-         <li> <a href="equiry.html">Enquiry</a></li>
-         <li> <a href="contact us.html">Contact Us</a></li>
-         <li> <a href="news.html">Events & News</a></li>
-         <li> <a href="services.html">Services</a></li>
-       </ul>
-       <br>
-<!-- More information will be added due to being able to use css -->
-       <img src="_images/Animal_Shelter_-_Dog_Campaign_Web.png" alt="Adopt Don't Shop" width="1500" height="400">
-       <br>
-    <p> Choosing to adopt a pet is one of the most rewarding decisions you can make. 
-      By adopting, you are giving an abandoned or abused animal a chance at a new, 
-      loving home. Every adoption helps us continue our mission of preventing cruelty 
-      and promoting kindness to animals.</p>
-<!-- Edit form later on -->
- <br>
- <img src="_images/did-you-know-1080x675.jpg.webp" alt="Did you Know" width="300" height="200">
+        <!-- Top Header -->
+    <div class="top-header">
+        <div class="container top-header-content">
+           
+            
+        </div>
+    </div>
 
-      <h3>Adoption Process</h3>
-    <p>Here is how our adoption process works:</p>
-    <p>Once the below form is filled, these are the remaining steps for the adoption process:</p>
-     <p> Firstly, fill this form with all required details.</p>
-        <form action="/submit-adoption-form" method="POST">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required>
-        <label for="petType">Preferred Pet Type:</label>
-        <select id="petType" name="petType" required>
- <option value="">Select a type</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="other">Other</option>
-        </select>
-        <label for="comments">Additional Comments:</label>
-        <textarea id="comments" name="comments" rows="4"></textarea>
-        <input type="submit" value="Submit Adoption Application">
-    </form>
-<br>
-<ul>
-    <!-- Each step of the adoption process is outlined in the list below -->
-    <li>
-         Next, arrange a meeting with an adoption counselor to discuss your lifestyle, preferences, and the specific needs of the pet you are considering.
-        <li>The adoption counselor is Caroline Smith. You can get her details and book a meeting by filling out the enquiry webpage. Please be specific about what you request from us.</li>
-    </li>
-    <li>
-        After that process, you will be called in to meet the pets. Visit the shelter to meet the animals available for adoption. Spend time interacting with them to find the best match for you. In this meeting you will be given forms with the adoption pricing.
-    </li>
-    <li>
-        Then a Home Visit (if necessary): In some cases, Animal Lifeline locations may require a home visit to ensure that your living environment is safe and suitable for the pet.
-    </li>
-    <li>
-        Once every thing is up to standard, there is an adoption Fee: Pay the adoption fee, which can vary by location. This fee usually covers vaccinations, spaying/neutering, and microchipping. This will all take place at our facility in Springfield.</p>
-    </li>
-    <li>
-        Lastly,Finalizing Adoption: Complete the adoption process by signing the adoption contract and providing identification.This document will be handed to you in person.
-         You can then take your new pet home, along with any essential supplies and information.
-    </li>
-    <li>
-        Post-Adoption Support: After adoption, you can access resources and support from the SPCA and Animal Lifeline for any questions or concerns you may have. We also provide follow-up calls or visits to help ensure a smooth transition for you and your new pet.
-    </li>
-</ul>
-<br>
-<h3>Adoption Requirements</h3>
-    <p>To adopt a pet from us, you must:</p>
-    <ul>
-      <li>Be 18 years or older.</li>
-      <li>Provide proof of residence and identification.</li>
-      <li>Have consent from your landlord/body corporate (if renting).</li>
-      <li>Ensure existing pets are sterilized and vaccinated.</li>
-      <li>Show the ability to provide long-term care including food, shelter, and vet services.</li>
-    </ul>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="_images/logo.png" alt="Animal Lifeline Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Animal Lifeline</h1>
+                    <p>Hope. Healing. A second Chance.</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="takeAction.html">Take Action</a></li>
+                    <li><a href="adoption.html" class="active">Adopt</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                    <li><a href="news.html">Events & News</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <p>By meeting these requirements, you help us ensure that our animals go to safe and loving homes.</p>
-    <br>
+    <!-- Hero Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="adoption-hero">
+                <div class="adoption-hero-content">
+                    <h1>Love Knows No Size: Adopt a Little Friend Today!</h1>
+                    <p>Thousands of animals are abandoned every year. By adopting, you help reduce overpopulation and give a deserving animal a second chance at life. Our adoption fees cover sterilization, vaccinations, and a vet check-up, giving you peace of mind and saving you costs in the long run.</p>
+                </div>
+                <div class="adoption-hero-image">
+                    <img src="_images/Aodpt.jpg" alt="Adopt Me" class="adoption-img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h2> Pets up for adoption!</h2>
-    <p> Note: There is much more diferent types of pets available at our shelter. These are just a few examples of the pets we have up for adoption. </p>
-    <p> On this site, There is only certain fury babies and loving reptails. </p>
-    <p> Please head down to our facility to visit much more animals up for adoption.</p>
-<!-- List of different types of animals available for adoption -->
-    <h3> The different category of animals and reptails are:</h3>
-    <ul>
-      <li>Dogs</li> 
-      <li>Cats</li> 
-      <li>Birds</li> 
-      <li>Rabbits</li> 
-      <li>Guinea Pigs</li> 
-      <li>Hamsters</li> 
-      <li>Turtles</li>
-      <li>Snakes</li> 
-      <li>Lizards</li> 
-      </ul>
-      <br> 
-    <p> Note: For each category, there will only be 2 different future pets displayed. BUT! remember to make your way down to us, to see the amount of future pets we have! </p>
-    <br> 
-     <!-- A large group image of various domestic pets to showcase the variety available for adoption -->
-    <img src="_images/large-group-domestic-household-pets-260nw-235566706.webp" alt="Group pic" width="500" height="300"> 
+    <!-- Why Adopt Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>Why Adopt?</h1>
+            </div>
+            
+            <div class="adoption-banner">
+                <img src="_images/Animal_Shelter_-_Dog_Campaign_Web.png" alt="Adopt Don't Shop" class="adoption-banner-img">
+            </div>
+            
+            <div class="content">
+                <p>Choosing to adopt a pet is one of the most rewarding decisions you can make. By adopting, you are giving an abandoned or abused animal a chance at a new, loving home. Every adoption helps us continue our mission of preventing cruelty and promoting kindness to animals.</p>
+            </div>
+        </div>
+    </section>
 
-    <h3> Dogs for adoption:</h3>
-    <img src="_images/pup-1.jpg" alt="Dog 1" width="300" height="200">
-    <p>This is our amazing male Golden retrieve puppy named Pablo.  </p>
-    <br>
-    <img src="_images/gms.jpg" alt="Dog 2" width="300" height="200">
-    <p> This is our beautiful sassy teenager German Shepherd named Zoey.</p>
-<br>
+    <!-- Adoption Process Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h1>Adoption Process</h1>
+                <p>Here is how our adoption process works</p>
+            </div>
+            
+            <div class="content">
+                <p>Once the below form is filled, these are the remaining steps for the adoption process:</p>
+            </div>
 
-    <h3>Cats for adoption:</h3>
-<img src="_images/cat-1.jpeg" alt="Tabby Kitten" width="300" height="200">
-<p>Luna, Female Tabby kitten. Tiny explorer with big curious eyes, ready to pounce into your heart.</p>
-<br>
-<img src="_images/cat-2.jpeg" alt="Black-and-White Cat" width="300" height="200">
-<p>Max, Male Black-and-White Domestic Shorthair. Calm, charming, and the ultimate cuddle buddy.</p>
-<br>
+            <!-- Adoption Form -->
+            <div class="form-container">
+                <h3>Adoption Application Form</h3>
+                <form action="/submit-adoption-form" method="POST">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="petType">Preferred Pet Type:</label>
+                        <select id="petType" name="petType" required>
+                            <option value="">Select a type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="bird">Bird</option>
+                            <option value="rabbit">Rabbit</option>
+                            <option value="guinea_pig">Guinea Pig</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="turtle">Turtle</option>
+                            <option value="snake">Snake</option>
+                            <option value="lizard">Lizard</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn">Submit Adoption Application</button>
+                    </div>
+                </form>
+            </div>
 
-<h3>Birds for adoption:</h3>
-<img src="_images/e5283683-cbb5-44d8-9fa5-a97be29213fe.jpg" alt="Parrotlet" width="300" height="200">
-<p>Kiwi, Male Parrotlet. Small in size, big in personality! Loves chatter, attention, and playtime.</p>
-<br>
-<img src="_images/40e14030-1472-454e-838e-db70991b99e1.jpg" alt="Canary" width="300" height="200">
-<p>Tweety, Female Canary. A tiny songbird with a heart full of joy, ready to brighten your day.</p>
-<br>
+            <div class="adoption-process-image">
+            <img src="_images/did-you-know-1080x675.jpg.webp" alt="Adoption Process" class="adoption-process-img">
+        </div>
 
-<h3>Rabbits for adoption:</h3>
-<img src="_images/3e066475-005e-4fb8-abc3-8d1540253174.jpg" alt="Brown Rabbit" width="300" height="200">
-<p>Thumper, Male Lop Rabbit. Soft, snuggly, and always ready for hopping adventures and cuddles.</p>
-<br>
-<img src="_images/23c8ef25-cfc4-4e78-a9ce-fa720d5f1e02.jpg" alt="White Rabbit" width="300" height="200">
-<p>Flopsy, Female Netherland Dwarf Rabbit. Petite, playful, and a little mischievous, pure bunny charm!</p>
-<br> 
+            <!-- Process Steps -->
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Counselor Meeting</h3>
+                        <p>Arrange a meeting with an adoption counselor to discuss your lifestyle, preferences, and the specific needs of the pet you are considering. The adoption counselor is Caroline Smith. You can get her details and book a meeting by filling out the enquiry webpage.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Meet the Pets</h3>
+                        <p>Visit the shelter to meet the animals available for adoption. Spend time interacting with them to find the best match for you. In this meeting you will be given forms with the adoption pricing.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Home Visit</h3>
+                        <p>In some cases, we may require a home visit to ensure that your living environment is safe and suitable for the pet.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Adoption Fee</h3>
+                        <p>Pay the adoption fee, which covers vaccinations, spaying/neutering, and microchipping. This will all take place at our facility in Springfield.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Finalize Adoption</h3>
+                        <p>Complete the adoption process by signing the adoption contract and providing identification. This document will be handed to you in person. You can then take your new pet home, along with any essential supplies and information.</p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Post-Adoption Support</h3>
+                        <p>After adoption, you can access resources and support from us for any questions or concerns you may have. We also provide follow-up calls or visits to help ensure a smooth transition for you and your new pet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h3>Guinea Pigs for adoption:</h3>
-<img src="_images/024ecd4e-eeba-4579-b529-4e5006de6f8b.jpg" alt="Abyssinian Guinea Pig" width="300" height="200">
-<p>Peanut, Male Abyssinian Guinea Pig. Tiny explorer with a love for veggies and cuddles.</p>
-<br>
-<img src="_images/980764d5-b1e5-45e3-86f7-48dda65fbc97.jpg" alt="American Guinea Pig" width="300" height="200">
-<p>Cinnamon, Female American Guinea Pig. Sweet, gentle, and the perfect tiny snuggle buddy.</p>
-<br>
+    <!-- Requirements Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h1>Adoption Requirements</h1>
+            </div>
+            
+            <div class="content">
+                <p>To adopt a pet from us, you must:</p>
+                
+                <div class="requirements-grid">
+                    <div class="requirement-card">
+                        <i class="fas fa-id-card"></i>
+                        <h3>Age Requirement</h3>
+                        <p>Be 18 years or older.</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-home"></i>
+                        <h3>Residence Proof</h3>
+                        <p>Provide proof of residence and identification.</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-building"></i>
+                        <h3>Landlord Consent</h3>
+                        <p>Have consent from your landlord/body corporate (if renting).</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Existing Pets</h3>
+                        <p>Ensure existing pets are sterilized and vaccinated.</p>
+                    </div>
+                    
+                    <div class="requirement-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Long-term Care</h3>
+                        <p>Show the ability to provide long-term care including food, shelter, and vet services.</p>
+                    </div>
+                </div>
+                
+                <p>By meeting these requirements, you help us ensure that our animals go to safe and loving homes.</p>
+            </div>
+        </div>
+    </section>
 
-<h3>Hamsters for adoption:</h3>
-<img src="_images/41ccac1c-fa59-4e72-98e4-67c989181f34.jpg" alt="Golden Hamster" width="300" height="200">
-<p>Nibbles, Male Golden Hamster. Little ball of energy who loves running, nibbling, and stealing hearts!</p>
-<br>
-<img src="_images/67aed669-3ec8-4c2c-b115-8492ede00bf0.jpg" alt="Syrian Hamster" width="300" height="200">
-<p>Honey, Female Syrian Hamster. Tiny, adorable, and ready to charm everyone with her friendly personality.</p>
-<br>
+    <!-- Pets Available Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-title">
+                <h1>Pets Up for Adoption!</h1>
+                <p>Meet our furry and scaly friends waiting for their forever homes</p>
+            </div>
+            
+            <div class="content">
+                <p>Note: There are many more different types of pets available at our shelter. These are just a few examples of the pets we have up for adoption. Please head down to our facility to visit many more animals up for adoption.</p>
+                
+                <div class="pets-group-image">
+                    <img src="_images/large-group-domestic-household-pets-260nw-235566706.webp" alt="Group pic" class="pets-group-img">
+                </div>
+                
+                <h3>Animal Categories Available:</h3>
+                <div class="categories-grid">
+                    <div class="category-item">Dogs</div>
+                    <div class="category-item">Cats</div>
+                    <div class="category-item">Birds</div>
+                    <div class="category-item">Rabbits</div>
+                    <div class="category-item">Guinea Pigs</div>
+                    <div class="category-item">Hamsters</div>
+                    <div class="category-item">Turtles</div>
+                    <div class="category-item">Snakes</div>
+                    <div class="category-item">Lizards</div>
+                </div>
+                
+                <p>Note: For each category, we're showing 2 available pets. But remember to visit us to see all our wonderful animals!</p>
+            </div>
 
-<h3>Turtles for adoption:</h3>
-<img src="_images/4288b5f7-811a-41a8-ae41-ecc2ace0ece5.jpg" alt="Aquatic Turtle" width="300" height="200">
-<p>Shelly, Red-Eared Slider Turtle. Calm, graceful, and loves swimming and basking in the sun.</p>
-<br>
-<img src="_images/s1.jpg" alt="Land Turtle" width="300" height="200">
-<p>Speedy, Hermann's Tortoise. Slow, steady, and utterly charming, perfect for a cozy home!</p>
-<br>
+            <!-- Pets Gallery -->
+<div class="pets-gallery">
 
-<h3>Snakes for adoption:</h3>
-<img src="_images/7f49166f-5d8c-47b1-85a7-89a462fa406d.jpg" alt="Corn Snake" width="300" height="200">
-<p>Slinky, Corn Snake. Smooth, gentle, and surprisingly affectionate , the perfect little slithery friend.</p>
-<br>
-<img src="_images/s-2.jpg" alt="Ball Python" width="300" height="200">
-<p>Stripes, Ball Python. Stunning patterns and calm nature , easygoing and beginner-friendly!</p>
-<br> 
+    <!-- Dogs -->
+    <div class="pet-category">
+        <h3>Dogs for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/pup-1.jpg" alt="Dog 1">
+                </div>
+                <div class="animal-content">
+                    <h4>Pablo</h4>
+                    <p class="animal-breed">Golden Retriever Puppy</p>
+                    <p>Male • 3 months old</p>
+                    <p>This amazing male Golden Retriever puppy is full of energy and love!</p>
+                </div>
+            </div>
 
-<h3>Lizards for adoption:</h3>
-<img src="_images/l-2.jpg" alt="Green Iguana" width="300" height="200">
-<p>Lizzy, Green Iguana. Majestic climber with a big personality, loves basking and exploring.</p>
-<br>
-<img src="_images/l-1.jpeg" alt="Bearded Dragon" width="300" height="200">
-<p>Spike, Bearded Dragon. Friendly, playful, and always ready to soak up your love and attention.</p>
-<br>
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/gms.jpg" alt="Dog 2">
+                </div>
+                <div class="animal-content">
+                    <h4>Zoey</h4>
+                    <p class="animal-breed">German Shepherd</p>
+                    <p>Female • 1 year old</p>
+                    <p>This beautiful sassy teenager German Shepherd is smart and loyal!</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <p> Ready to find your new best friend? Visit us at our shelter in Springfield or contact us at (031) 202 1234 or email </p>
-<hr>
-<footer>
-        <p>&copy; 2025 Animal Lifeline-Durban & Coast. All rights reserved.</p>
+    <!-- Cats -->
+    <div class="pet-category">
+        <h3>Cats for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/cat-1.jpeg" alt="Tabby Kitten">
+                </div>
+                <div class="animal-content">
+                    <h4>Luna</h4>
+                    <p class="animal-breed">Tabby Kitten</p>
+                    <p>Female • 2 months old</p>
+                    <p>Tiny explorer with big curious eyes, ready to pounce into your heart.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/cat-2.jpeg" alt="Black-and-White Cat">
+                </div>
+                <div class="animal-content">
+                    <h4>Max</h4>
+                    <p class="animal-breed">Domestic Shorthair</p>
+                    <p>Male • 1 year old</p>
+                    <p>Calm, charming, and the ultimate cuddle buddy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Birds -->
+    <div class="pet-category">
+        <h3>Birds for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/e5283683-cbb5-44d8-9fa5-a97be29213fe.jpg" alt="Parrotlet">
+                </div>
+                <div class="animal-content">
+                    <h4>Kiwi</h4>
+                    <p class="animal-breed">Parrotlet</p>
+                    <p>Male</p>
+                    <p>Small in size, big in personality! Loves chatter, attention, and playtime.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/40e14030-1472-454e-838e-db70991b99e1.jpg" alt="Canary">
+                </div>
+                <div class="animal-content">
+                    <h4>Tweety</h4>
+                    <p class="animal-breed">Canary</p>
+                    <p>Female</p>
+                    <p>A tiny songbird with a heart full of joy, ready to brighten your day.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rabbits -->
+    <div class="pet-category">
+        <h3>Rabbits for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/3e066475-005e-4fb8-abc3-8d1540253174.jpg" alt="Brown Rabbit">
+                </div>
+                <div class="animal-content">
+                    <h4>Thumper</h4>
+                    <p class="animal-breed">Lop Rabbit</p>
+                    <p>Male</p>
+                    <p>Soft, snuggly, and always ready for hopping adventures and cuddles.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/23c8ef25-cfc4-4e78-a9ce-fa720d5f1e02.jpg" alt="White Rabbit">
+                </div>
+                <div class="animal-content">
+                    <h4>Flopsy</h4>
+                    <p class="animal-breed">Netherland Dwarf Rabbit</p>
+                    <p>Female</p>
+                    <p>Petite, playful, and a little mischievous, pure bunny charm!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guinea Pigs -->
+    <div class="pet-category">
+        <h3>Guinea Pigs for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/024ecd4e-eeba-4579-b529-4e5006de6f8b.jpg" alt="Abyssinian Guinea Pig">
+                </div>
+                <div class="animal-content">
+                    <h4>Peanut</h4>
+                    <p class="animal-breed">Abyssinian Guinea Pig</p>
+                    <p>Male</p>
+                    <p>Tiny explorer with a love for veggies and cuddles.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/980764d5-b1e5-45e3-86f7-48dda65fbc97.jpg" alt="American Guinea Pig">
+                </div>
+                <div class="animal-content">
+                    <h4>Cinnamon</h4>
+                    <p class="animal-breed">American Guinea Pig</p>
+                    <p>Female</p>
+                    <p>Sweet, gentle, and the perfect tiny snuggle buddy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hamsters -->
+    <div class="pet-category">
+        <h3>Hamsters for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/41ccac1c-fa59-4e72-98e4-67c989181f34.jpg" alt="Golden Hamster">
+                </div>
+                <div class="animal-content">
+                    <h4>Nibbles</h4>
+                    <p class="animal-breed">Golden Hamster</p>
+                    <p>Male</p>
+                    <p>Little ball of energy who loves running, nibbling, and stealing hearts!</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/67aed669-3ec8-4c2c-b115-8492ede00bf0.jpg" alt="Syrian Hamster">
+                </div>
+                <div class="animal-content">
+                    <h4>Honey</h4>
+                    <p class="animal-breed">Syrian Hamster</p>
+                    <p>Female</p>
+                    <p>Tiny, adorable, and ready to charm everyone with her friendly personality.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Turtles -->
+    <div class="pet-category">
+        <h3>Turtles for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/4288b5f7-811a-41a8-ae41-ecc2ace0ece5.jpg" alt="Aquatic Turtle">
+                </div>
+                <div class="animal-content">
+                    <h4>Shelly</h4>
+                    <p class="animal-breed">Red-Eared Slider Turtle</p>
+                    <p>—</p>
+                    <p>Calm, graceful, and loves swimming and basking in the sun.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/s1.jpg" alt="Land Turtle">
+                </div>
+                <div class="animal-content">
+                    <h4>Speedy</h4>
+                    <p class="animal-breed">Hermann's Tortoise</p>
+                    <p>—</p>
+                    <p>Slow, steady, and utterly charming, perfect for a cozy home!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Snakes -->
+    <div class="pet-category">
+        <h3>Snakes for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/7f49166f-5d8c-47b1-85a7-89a462fa406d.jpg" alt="Corn Snake">
+                </div>
+                <div class="animal-content">
+                    <h4>Slinky</h4>
+                    <p class="animal-breed">Corn Snake</p>
+                    <p>—</p>
+                    <p>Smooth, gentle, and surprisingly affectionate, the perfect little slithery friend.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/s-2.jpg" alt="Ball Python">
+                </div>
+                <div class="animal-content">
+                    <h4>Stripes</h4>
+                    <p class="animal-breed">Ball Python</p>
+                    <p>—</p>
+                    <p>Stunning patterns and calm nature, easygoing and beginner-friendly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lizards -->
+    <div class="pet-category">
+        <h3>Lizards for Adoption</h3>
+        <div class="animal-grid">
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/l-2.jpg" alt="Green Iguana">
+                </div>
+                <div class="animal-content">
+                    <h4>Lizzy</h4>
+                    <p class="animal-breed">Green Iguana</p>
+                    <p>—</p>
+                    <p>Majestic climber with a big personality, loves basking and exploring.</p>
+                </div>
+            </div>
+
+            <div class="animal-card">
+                <div class="animal-img">
+                    <img src="_images/l-1.jpeg" alt="Bearded Dragon">
+                </div>
+                <div class="animal-content">
+                    <h4>Spike</h4>
+                    <p class="animal-breed">Bearded Dragon</p>
+                    <p>—</p>
+                    <p>Friendly, playful, and always ready to soak up your love and attention.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+            
+            <div class="adoption-cta">
+                <h3>Ready to Find Your New Best Friend?</h3>
+                <p>Visit us at our shelter in Springfield or contact us at <strong>(031) 202 1234</strong> or email <strong>adoptions@animallifeline.org</strong></p>
+                <a href="contact us.html" class="btn">Start Your Adoption Journey</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Animal Lifeline</h4>
+                    <p>We are a non-profit organization dedicated to rescuing, rehabilitating, and rehoming animals in need.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="takeAction.html">Take Action</a></li>
+                        <li><a href="adoption.html">Adoption Process</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Springfield Park, Durban</li>
+                        <li><i class="fas fa-phone-alt"></i> 021 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@animallifeline.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Animal Lifeline-Durban & Coast. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-</body> 
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        // Add any JavaScript functionality you need here
+    </script>
+</body>
 </html>

@@ -1,0 +1,413 @@
+/* Additional styles for the Take Action page - take-action-styles.css */
+
+/* Alert Header - Updated to center content */
+
+/*
+References for CSS Styling
+
+W3Schools. n.d. CSS Pseudo-classes. [online] Available at:
+   https://www.w3schools.com/css/css_pseudo_classes.asp
+   (Accessed 19/09/2025).
+
+MDN Web Docs. n.d. CSS Grid Layout. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+   (Accessed 19/09/2025).
+
+CSS-Tricks. n.d. A Complete Guide to Flexbox. [online] Available at:
+   https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   (Accessed 19/09/2025).
+
+ MDN Web Docs. n.d. Using media queries. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+   (Accessed 20/09/2025).
+
+W3Schools. n.d. CSS Box Model. [online] Available at:
+   https://www.w3schools.com/css/css_boxmodel.asp
+   (Accessed 20/09/2025).
+
+ MDN Web Docs. n.d. Font properties. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/font
+   (Accessed 19/09/2025).
+
+ W3Schools. n.d. CSS Backgrounds and Borders. [online] Available at:
+   https://www.w3schools.com/css/css_background.asp
+   (Accessed 22/09/2025).
+
+ MDN Web Docs. n.d. CSS Transitions. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+   (Accessed 20/09/2025).
+
+ MDN Web Docs. n.d. Responsive design. [online] Available at:
+   https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+   (Accessed 22/09/2025).
+
+ W3Schools. n.d. CSS Box Shadow. [online] Available at:
+    https://www.w3schools.com/css/css3_shadows.asp
+    (Accessed 20/09/2025).
+*/
+
+ 
+
+.alert-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Added this to center horizontally */
+    gap: 15px;
+    margin-bottom: 20px;
+    text-align: center; /* Added for text alignment */
+}
+
+.alert-icon {
+    width: 80px;
+    height: 80px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin: 30px 0;
+}
+
+.form-container h3 {
+    color: #2c6b94;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fc8dcd;
+    padding-bottom: 10px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #000000; /* Changed from #2c6b94 to black */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    color: #000000; /* Added black text color for inputs */
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2c6b94;
+    color: #000000; /* Ensure black text on focus */
+}
+
+/* Form text and placeholders */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666; /* Dark gray for placeholders */
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    color: #000000; /* Black text for all form fields */
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-option, .checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #000000; /* Black text for radio and checkbox labels */
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Emergency Notice */
+.emergency-notice {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.emergency-notice p {
+    margin: 0;
+    color: #856404;
+}
+
+/* Donation List */
+.donation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.donation-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    color: #000000; /* Black text for donation list */
+}
+
+.donation-list li:last-child {
+    border-bottom: none;
+}
+
+.donation-list strong {
+    color: #fc8dcd;
+}
+
+/* Images */
+.donation-img, .volunteer-img, .fundraising-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+}
+
+.volunteer-image, .fundraising-image {
+    margin-bottom: 30px;
+}
+
+/* Terms Section */
+.terms-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.terms-section h4 {
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.terms-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.terms-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #000000; /* Black text for terms list */
+}
+
+.terms-list a {
+    color: #2c6b94; /* Keep links blue for visibility */
+    text-decoration: none;
+}
+
+.terms-list a:hover {
+    text-decoration: underline;
+}
+
+/* Events Grid */
+.events-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #fc8dcd;
+}
+
+.event-card h3 {
+    color: #2c6b94;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin-bottom: 10px;
+    color: #000000; /* Black text for event cards */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .alert-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Take Action Page Styles */
+.alert-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin: 30px 0;
+}
+
+.form-container h3 {
+    color: #2c6b94;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fc8dcd;
+    padding-bottom: 10px;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.radio-option, .checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.emergency-notice {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.emergency-notice p {
+    margin: 0;
+    color: #856404;
+}
+
+.donation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.donation-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.donation-list li:last-child {
+    border-bottom: none;
+}
+
+.donation-list strong {
+    color: #fc8dcd;
+}
+
+.donation-img, .volunteer-img, .fundraising-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.volunteer-image, .fundraising-image {
+    margin-bottom: 30px;
+}
+
+.terms-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.terms-section h4 {
+    color: #2c6b94;
+    margin-bottom: 15px;
+}
+
+.terms-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.terms-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.events-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #fc8dcd;
+}
+
+.event-card h3 {
+    color: #2c6b94;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    margin-bottom: 10px;
+}
